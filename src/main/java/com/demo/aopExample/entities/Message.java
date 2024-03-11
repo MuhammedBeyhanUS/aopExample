@@ -3,18 +3,20 @@ package com.demo.aopExample.entities;
 import java.io.Serializable;
 
 public class Message{
-    private String message;
+    private String content;
 
-    public  Message(){}
-    public Message(String message) {
-        message = message;
+    public Message() {
     }
 
-    public String getMessage() {
-        return message;
+    public Message(String content) {
+        this.content = content;
     }
 
-    public void setMessage(String message) {
-        message = message;
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 }

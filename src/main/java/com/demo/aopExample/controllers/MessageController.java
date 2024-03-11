@@ -18,6 +18,6 @@ public class MessageController {
 
     @PostMapping
     public ResponseEntity<Integer> getCharCount(@RequestBody Message message){
-        return ResponseEntity.ok(messageService.getCharCount(message.getMessage()));
+        return ResponseEntity.ok(messageService.getCharCount(message.getContent()));
     }
 }
